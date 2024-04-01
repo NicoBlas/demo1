@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:wght@300;400&family=Scheherazade+New&display=swap')
+body {
+    background-color: #eff0e9;
+    font-family: 'Arial', sans-serif;
+}
+
+:root {
+    --cards: 4;
+    --cardTopPadding: 1.5em;
+    --cardMargin: 4vw;
+}
+h2{
+  font-family: "Times New Roman", Times, serif;
+}
+.container{
+    max-width: 96%;
+}
+.containercard {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.cardhero{
+    --bs-card-border-color: none;
+    --bs-card-bg: #eff0e9;;
+}
+#cardshero {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards), var(--cardHeight));
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+    --index: 1;
+    --cardHeight: 87vh;
+    position: sticky;
+    top: 115px;
+}
+#card2 {
+    --index: 2;
+    --cardHeight: 87vh;
+    position: sticky;
+    top: 170px;
+
+/*    overflow - scroll-behavior: \*/
+
+
+/*    height 100%;*/
+}
+#card3 {
+    --index: 3;
+    --cardHeight: 87vh;
+    --cardTopPadding: 3em;
+    position: sticky;
+    top: 74px;
+
+}
+#card4 {
+    --index: 4;
+    --cardHeight: 87vh;
+    position: sticky;
+    top: 74px;
+}
+
+.cardhero {
+    position: sticky;
+    top: 20px;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#card1 .card-body {
+    background-color: #edd813;
+}
+#card2 .card-body {
+    background-color: #000;
+}
+#card3 .card-body {
+    background-color: #eef0e9;
+}
+#card4 .card-body {
+    background-color: #D4AFB9;
+}
+
+.card-body {
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 50px;
+    height: var(--cardHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+h2 {
+    font-size: 4.5em;
+}
+
+
+header{
+    background-color: #eff0e9;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 80;
+}
+header img{
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 56px;
+}
+section{
+    background-color: #eff0e9;
+}
+.title{
+    position: absolute;
+    top: 50px;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+.title-w{
+    position: relative;
+    top: 100px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+.hero-text{
+    color: #000000;
+    font-family: "EB Garamond", serif;
+    font-size: 123px;
+    font-weight: 500;
+    line-height: 93px;
+    position: absolute;
+    top: 150px;
+}
+.hero img{
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+.copy-hero{
+    position: absolute;
+    bottom: 30px;
+}
+ul.horizontal-list {
+  list-style: none;
+}
+ul.horizontal-list li {
+  display: inline-block;
+    padding: 0 0.5rem;
+    min-width: 4rem;
+  text-align: center;
+  font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+ul.horizontal-list li:not(:last-child) {
+  border-right: 1px solid black;
+}
+.right {
+    text-align: right;
+    margin-top: 23px;
+}
+.cases, .cases h3, .cases p{
+    color: #fff;
+}
+.cases h3{
+    position: relative;
+    top: 135px;
+    color: #FFFFFF;
+  font-family: "EB Garamond", serif;
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+}
+.cases p{
+    position: relative;
+    top: 150px;
+    height: 100px;
+    color: #FFFFFF;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.cases img{
+    width: 100%;
+        position: relative;
+    top: 145px;
+    padding-bottom: 30px;
+}
+.scroll-container {
+  width: 100%;
+  height: 87vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row.scroll-page.bottom {
+    padding-bottom: 250px;
+}
+.naranja{
+    position: relative;
+    top: 95px;
+    background-color: #e76910;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.lila{
+    position: relative;
+    top: 95px;
+    background-color: #AE8FC0;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.rojo{
+    position: relative;
+    top: 95px;
+    background-color: #c5302e;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.amarillo{
+    position: relative;
+    top: 95px;
+    background-color: #EED805;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.azul{
+    position: relative;
+    top: 95px;
+    background-color: #2993f1;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.verde{
+    position: relative;
+    top: 95px;
+    background-color: #80a800;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.outline{
+font-family: "Roboto", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: #61CE7000;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF;
+    border-radius: 15px 15px 15px 15px;
+    position: relative;
+    top: 150px;
+    color: white;
+    width: 275px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/*about*/
+.about{
+    margin-bottom: 150px;
+}
+.about h3{
+    color: #000;
+}
+.about img{
+    width: 100%;
+    position: relative;
+    padding-bottom: 30px;
+}
+.title-a{
+    position: relative;
+    top: 50px;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    top: 40px;
+}
+.about-txt{
+    color: #000000;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 110px;
+    padding: 0 150px 60px 0;
+}
+.about1{
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    padding: 0 200px 60px 0;
+    list-style: 29px;
+}
+.about2, .about3{
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    list-style: 29px;
+    padding: 0 40px 60px 0;
+}
+.about-tile{
+    color: #000000;
+    font-family: "EB Garamond", serif;    
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 50px;
+    padding: 0 80px 60px 0;
+}
+.about-tile3{
+    color: #000000;
+    font-family: "EB Garamond", serif;    
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 50px;
+    padding: 0 80px 60px 0;
+}
+.space{
+    padding-top: 30px;
+}
+.detail{
+    font-weight: bold;
+}
+.txt-right{
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 25px; 
+}
+.separador img{
+    width: 40%;
+}
+.about-color{
+    background-color: #edd813;
+}
+
+
+
+
